@@ -44,3 +44,36 @@ print("\nEstado de la lista de compras:")
 for i in range(len(compras)):
     estado = " Comprado" if ya_comprado[i] else " Pendiente"
     print(f"{compras[i]} - {estado}")
+
+    numeros = [15, 3, 28, 7, 10, 50, 2]
+
+print("Valor máximo de la lista:", max(numeros))
+print("Valor mínimo de la lista:", min(numeros))
+
+ordenados = sorted(numeros)
+print("Lista en orden:", ordenados)
+
+enteros = [12, 7, 9, 20, 33, 14, 5]
+
+pares = []
+impares = []
+
+for i in range(len(enteros)):
+    if enteros[i] % 2 == 0:
+        pares.append(enteros[i])
+    else:
+        impares.append(enteros[i])
+
+print("Lista de pares:", pares)
+print("Lista de impares:", impares)
+
+usuarios = ["Paolo", "Maya", "Alessandro", "Diego"]
+
+nuevo = input("Ingresa un nombre de usuario: ")
+
+while nuevo in usuarios:
+    print("Ese nombre ya existe, intenta con otro.")
+    nuevo = input("Ingresa un nombre de usuario: ")
+
+usuarios.append(nuevo)
+print("Lista de usuarios actualizada:", usuarios)
